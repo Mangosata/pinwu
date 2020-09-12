@@ -4,3 +4,28 @@ spring:
     username: admin
     password: Admin!@4516
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 0
+    host: 60.205.3.105
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+  mail:
+    host: smtp.gmail.com
+    nickname: 品物
+    username: mangosata@gmail.com
+    password: rynowbfquuvtfjko
+    from: mangosata@gmail.com
+    protocol: smtp
+    port: 587
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+    default-encoding: utf-8
+    smtp:
+      socketFactory:
+        port: 465
+        class: javax.net.ssl.SSLSocketFactory
